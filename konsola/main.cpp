@@ -29,6 +29,31 @@ class WashingMachine : public Device
         }
 };
 
+class VacuumCleaner : public Device 
+{
+    private: 
+        bool vacuum_running = false; 
+
+    public: 
+        void on() 
+        {
+            if (this->vacuum_running == false) 
+            {
+                this->vacuum_running = true;
+                this->print("Odkurzacz włączono");
+            }
+        };
+
+        void off()
+        {
+            if (this->vacuum_running == true) 
+            {
+                this->vacuum_running = false;
+                this->print("Odkurzacz wyłączono");
+            }  
+        }
+};
+
 int main() {
     return 0;
 }
