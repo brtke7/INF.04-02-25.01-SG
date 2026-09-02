@@ -20,9 +20,11 @@ class WashingMachine : public Device
             if (program_number >= 1 && program_number <= 12) 
             {
                 this->program_number = program_number;
+                this->print("Program został ustawiony");
             } else 
             {
                 this->program_number = 0;
+                this->print("Podano niepoprawny numer programu");
             }
 
             return this->program_number;
@@ -55,5 +57,15 @@ class VacuumCleaner : public Device
 };
 
 int main() {
+    WashingMachine washingmachine; 
+    VacuumCleaner  vacuumcleaner;
+
+    int program_number = 0;
+    std::cout << "Podaj numer prania 1..12 ";
+    std::cin >> program_number;
+
+    washingmachine.set_program(program_number);
+
+
     return 0;
 }
