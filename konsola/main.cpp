@@ -66,6 +66,14 @@ int main() {
 
     washingmachine.set_program(program_number);
 
+    for (int count = 0; count < 3; count++) 
+    {
+        vacuumcleaner.on();
+    }
+
+    vacuumcleaner.print("Odkurzacz wyładował się");
+
+    vacuumcleaner.off();
 
     return 0;
 }
