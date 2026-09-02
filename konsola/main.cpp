@@ -15,6 +15,15 @@ class WashingMachine : public Device
         int program_number = 0;
 
     public: 
+        // ************************************************
+        //     nazwa: set_program
+        //     opis: metoda ustawia numer programu z przedziału od 1 do 12. Ten numer zapisuje do zmiennej prywatnej w klasie, jeżeli cyfra nie jest z przedziału to zapisuje 0 do tej zmiennej i zwraca odpowiedni komunikat.
+        //     parametry:
+        //       int program_number - zmienna przechowuje numer programu, i później zapisuje go do zmiennej prywatnej.s
+        //     ...
+        //     zwracany typ i opis: int program_number, zwraca zapisany w klasie prywatnej numer programu.
+        //     autor: 77777777
+        // ************************************************
         int set_program(int program_number) 
         {
             if (program_number >= 1 && program_number <= 12) 
