@@ -124,7 +124,7 @@
                 android:text="WŁĄCZ"/>
 
             <TextView
-                android:id="@+id/is_vacuum_cleaner_on"
+                android:id="@+id/is_vacuum_cleaner_turned_on"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Odkurzacz Wyłączony" />
