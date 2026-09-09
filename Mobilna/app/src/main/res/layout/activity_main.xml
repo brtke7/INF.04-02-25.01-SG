@@ -1,19 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADD8E6"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/main_app_title"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Urządzenia Domowe"
+        android:textSize="24sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/credentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Autor: 777777777" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/washingmachine_image"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pralka" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/washingmachine_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pralka"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edit_text_washingmaschine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#87CEEB"
+                android:hint="Podaj nr prania 1..12"
+                android:inputType="number"
+                android:textColor="#000080"
+                android:background="#87CEEB"
+                android:textColorHint="#000080"/>
+
+            <Button
+                android:id="@+id/button_washingmachine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#4169E1"
+                android:text="ZATWIERDŹ" />
+
+            <TextView
+                android:id="@+id/program_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numer prania: Nie podano" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/odkurzacz" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odkurzacz"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/vacuum_cleaner_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#4169E1"
+                android:text="WŁĄCZ"/>
+
+            <TextView
+                android:id="@+id/is_vacuum_cleaner_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odkurzacz Wyłączony" />
+
+            <TextView
+                android:id="@+id/vacuum_cleaner_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: naładowany" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
