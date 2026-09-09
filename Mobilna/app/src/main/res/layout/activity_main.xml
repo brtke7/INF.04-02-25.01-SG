@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center"
-        android:text="Urządzenia Domowe"
+        android:text="@string/urz_dzenia_domowe"
         android:textSize="24sp" />
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center"
-        android:text="Autor: 777777777" />
+        android:text="@string/autor_777777777" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:id="@+id/washingmachine_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pralka"
+                android:text="@string/pralka"
                 android:textSize="24sp" />
 
             <EditText
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#87CEEB"
-                android:hint="Podaj nr prania 1..12"
+                android:hint="@string/podaj_nr_prania_1_12"
                 android:inputType="number"
                 android:textColor="#000080"
                 android:background="#87CEEB"
@@ -74,13 +74,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:backgroundTint="#4169E1"
-                android:text="ZATWIERDŹ" />
+                android:text="@string/zatwierd" />
 
             <TextView
                 android:id="@+id/program_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Numer prania: Nie podano" />
+                android:text="@string/numer_prania_nie_podano" />
 
         </LinearLayout>
 
@@ -112,7 +112,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Odkurzacz"
+                android:text="@string/odkurzacz"
                 android:textSize="24sp" />
 
             <Button
@@ -121,19 +121,19 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:backgroundTint="#4169E1"
-                android:text="WŁĄCZ"/>
+                android:text="@string/w_cz"/>
 
             <TextView
                 android:id="@+id/is_vacuum_cleaner_turned_on"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Odkurzacz Wyłączony" />
+                android:text="@string/odkurzacz_wy_czony" />
 
             <TextView
                 android:id="@+id/vacuum_cleaner_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Status: naładowany" />
+                android:text="@string/status_na_adowany" />
 
         </LinearLayout>
 

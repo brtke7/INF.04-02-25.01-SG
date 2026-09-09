@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Mobilna</string>
+    <string name="urz_dzenia_domowe">Urządzenia Domowe</string>
+    <string name="autor_777777777">Autor: 777777777</string>
+    <string name="pralka">Pralka</string>
+    <string name="podaj_nr_prania_1_12">Podaj nr prania 1..12</string>
+    <string name="zatwierd">ZATWIERDŹ</string>
+    <string name="numer_prania_nie_podano">Numer prania: Nie podano</string>
+    <string name="odkurzacz">Odkurzacz</string>
+    <string name="w_cz">WŁĄCZ</string>
+    <string name="odkurzacz_wy_czony">Odkurzacz Wyłączony</string>
+    <string name="status_na_adowany">Status: naładowany</string>
 </resources>
